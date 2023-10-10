@@ -8,3 +8,8 @@ passwordBtn.addEventListener('click', () => {
   const randomPassword = nanoid();
   displayRandomPassword.innerHTML = randomPassword;
 });
+
+displayRandomPassword.addEventListener('click', (copia) => {
+  copy(copia.target.innerHTML);
+  alert('Senha copiada!');
+});
